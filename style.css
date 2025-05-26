@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url(img/dicas-de-design-para-profissionais-de-marketing.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1800px;
+      width: 2000px;
+    height: 900px;
+}
+
+h1{
+    text-align: center;
+    padding: 55px;
+}
+
+
+h2{
+ display: flex;
+ padding: 2px;
+ margin: 30px;
+}
+
+.cabecario{
+    display: inline;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 90px;  
+}
+
+video{
+    border-radius: 20px;
+}
+
+
+nav ul li a{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: aliceblue;
+    width: 200px;
+}
