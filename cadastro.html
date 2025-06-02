@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="cad.php">
+    
+    <script>
+        function mostrarCampo() {
+            var tipo = document.getElementById("tipo").value;
+            document.getElementById("campo_rm").style.display = "none";
+            document.getElementById("campo_cpf").style.display = "none";
+
+            if (tipo === "Aluno") {
+                document.getElementById("campo_rm").style.display = "block";
+            } else if (tipo === "Pai" || tipo === "Responsável") {
+                document.getElementById("campo_cpf").style.display = "block";
+            }
+        }
+    </script>
+
+    <style>
+    body{
+        background-repeat: no-repeat;
+    }
+    input:hover{
+      background-color: #28a9e6; 
+    }
+
+    
+    
+</style>
+
+</head>
+
+
+<body>
+ 
+
+    <div class="cadastro">
+    <h1>Faça o seu cadastro</h1>
+</div>
+
+    <section>
+
+        <img src="img/png-clipart-computer-icons-button-encapsulated-postscript-button-text-logo-removebg-preview.png" alt="logo" width="200px" height="100px">
+
+         <form action="recebimento.php">
+        
+        <label for="Nome">Nome:</label>
+        <input type="text" name="Nome"><br>
+
+        <label for="Idade">Idade:</label>
+        <input type="number" name="number"><br>
+
+        <label for="Telefone">Telefone:</label>
+        <input type="tel" name="Telefone"><br>
+
+         <label for="tipo">Tipo:</label>
+
+    <select name="tipo" id="tipo" onchange="mostrarCampo()" required>
+        
+        
+        <option value="Pai">Pai ou Responsável</option>
+        <option value="Aluno">Aluno</option>
+    </select>
+
+    <div id="campo_rm" style="display:none;">
+        <label for="rm" class="rm">RM do Aluno:</label>
+        <input type="text" name="rm" id="rm">
+    </div>
+
+    <div id="campo_cpf" style="display:none;">
+        <label for="cpf" class="cpf">CPF do Responsável:</label>
+        <input type="text" name="cpf" id="cpf">
+    </div><br>
+
+    
+
+    <a href="index.html">
+        <input type="button" value="Voltar" class="button"></a>
+       
+       <a href="cad.php">
+        <input type="button" value="Enviar" class="button"></a>
+
+
+       </select>
+    </div>
+
+        
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+</body>
+</html>

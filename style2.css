@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    flex-wrap: wrap;
+}
+
+body{
+    background: linear-gradient(#01d9ff, black);
+    padding: 108px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div{
+   padding: 10px;
+   font-size: 10px;
+   
+}
+
+
+input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.rm{
+    font-size: 15px;
+}
+
+.cpf{
+    font-size: 15px;
+}
+
+.button{
+    background-color: #01d9ff;
+    box-shadow: 5px 5px black;
+}
+
+.button2{
+    background-color: #01d9ff;
+    box-shadow: 5px 5px white;
+    
+}
+
+h1{
+    text-align: center;
+    padding: 8px;
+    color: azure;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+}
+
+
+
+.cadastro{
+    display: inline;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+}
+
+.informacoes{
+    font-size: 25px;
+    color: aliceblue; 
+}
